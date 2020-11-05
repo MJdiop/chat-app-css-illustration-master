@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Text */
+  --PaleViolet: hsl(276, 100%, 81%);
+  --ModerateViolet: hsl(276, 55%, 52%);
+  --DesaturatedDarkViolet: hsl(271, 15%, 43%);
+  --GrayishBlue: hsl(206, 6%, 79%);
+  --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+  --DarkGrayishViolet: hsl(270, 7%, 64%);
+  /* Gradients */
+  --LightMagenta: hsl(293, 100%, 63%);
+  --LightViolet: hsl(264, 100%, 61%);
+  /* Secondary */
+  --White: hsl(0, 0%, 100%);
+  --LightGrayishViolet: hsl(270, 20%, 96%);
+  --LightGrayishVioletChats: hsl(270, 8%, 90%);
+  --VeryDarkDesaturatedViolet: hsl(271, 36%, 24%);
+  --VeryLightMagenta: hsl(289, 100%, 72%);
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  width: 1440px;
+  max-width: 1100px;
+  margin: 20px 0;
+  background-color: var(--White);
+  /* overflow-x: hidden; */
+}
+
+.violet {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  background: linear-gradient(245deg, var(--LightMagenta), var(--LightViolet));
+  width: 350px;
+  height: 90%;
+  border-bottom-right-radius: 165px;
+  border-bottom-left-radius: 180px;
+  z-index: -1;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 0 200px;
+}
+/* monbile  */
+.mobile {
+  width: 330px;
+  height: 100%;
+  border: 10px var(--White) solid;
+  border-radius: 40px;
+  margin-right: 90px;
+  box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.2);
+}
+/* mobile heading */
+
+.mobile .mobile-heading::before {
+  content: '';
+  background-color: var(--White);
+  position: absolute;
+  top: 30px;
+  width: 150px;
+  height: 25px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+.mobile .mobile-heading {
+  background: linear-gradient(245deg, var(--LightMagenta), var(--LightViolet));
+  width: 100%;
+  height: 90px;
+  padding: 35px 33px;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-heading i {
+  position: relative;
+  left: -45px;
+  top: 12px;
+  color: var(--White);
+  cursor: pointer;
+}
+
+.mobile .mobile-heading img {
+  width: 40px;
+  height: 40px;
+  border: 2px var(--White) solid;
+  border-radius: 50px;
+  margin-left: -33px;
+}
+
+.mobile .mobile-heading .avatar-name {
+  align-self: center;
+  margin-left: -50px;
+  position: relative;
+  left: 63px;
+  top: 2px;
+  color: var(--White);
+}
+
+.mobile .mobile-heading .avatar-text {
+  align-self: flex-end;
+  position: relative;
+  left: -48px;
+  top: 22px;
+  font-size: 13px;
+  color: var(--PaleViolet);
+}
+
+#menu {
+  position: relative;
+  left: 45px;
+  top: 12px;
+  color: var(--White);
+  cursor: pointer;
+}
+
+/* mobile body */
+.mobile-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 13px;
+  text-align: start;
+  background-color: var(--LightGrayishViolet);
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin-top: -10px;
+}
+
+.box-dialoge-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin-top: 18px;
+}
+
+.box-dialoge-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.box-dialoge-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+}
+
+.gray {
+  width: 200px;
+  background-color: var(--LightGrayishVioletChats);
+  color: var(--ModerateViolet);
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.white {
+  width: 200px;
+  background-color: var(--White);
+  color: #000;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.white:nth-child(3) {
+  width: 140px;
+}
+
+.mobile-body img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  margin: 0 4px;
+  margin-bottom: 5px;
+}
+
+.gradients {
+  background: linear-gradient(100deg, var(--LightMagenta), var(--LightViolet));
+  width: 235px;
+  color: var(--PaleViolet);
+  font-weight: bold;
+  padding: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+strong {
+  font-size: 16px;
+  color: var(--White);
+}
+form {
+  display: flex;
+  width: 350px;
+}
+
+.gradients i {
+  margin-right: -30px;
+  color: var(--VeryLightMagenta);
+}
+
+.second i {
+  margin-right: -55px;
+}
+
+input[type='text'] {
+  border: 1px solid var(--White);
+  width: 95%;
+  height: 50px;
+  border-radius: 50px;
+  margin: 0 8px 10px 8px;
+  padding: 0 20px;
+  outline: none;
+  font-size: 14px;
+  color: var(--GrayishBlue);
+}
+
+::placeholder {
+  color: var(--GrayishBlue);
+}
+
+.send {
+  position: relative;
+  left: -55px;
+  top: 6px;
+  width: 46px;
+  height: 38px;
+  background-color: var(--VeryDarkDesaturatedViolet);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.send i {
+  color: var(--White);
+  position: relative;
+  left: 13px;
+  top: 7px;
+}
+
+.desc {
+  width: 100%;
+  word-break: break-all;
+}
+
+.desc .title {
+  color: var(--VeryDarkDesaturatedViolet);
+  line-height: 2.7;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.desc .text {
+  color: var(--DarkGrayishViolet);
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+.grayish {
+  position: absolute;
+  top: 150px;
+  right: -50px;
+  background-color: var(--LightGrayishViolet);
+  width: 360px;
+  height: 100%;
+  border-top-right-radius: 165px;
+  border-top-left-radius: 180px;
+  z-index: -2;
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+  body {
+    width: 130%;
+  }
+  main {
+    display: grid;
+    grid-gap: 50px;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  .desc {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .desc .text {
+    margin-left: -77px;
+    word-break: break-word;
+    text-align: center;
+    padding: 2px 35px;
+  }
+
+  .violet {
+    top: 0px;
+    left: -177px;
+    height: 600px;
+  }
+
+  .grayish {
+    top: 600px;
+    right: -265px;
+    height: 470px;
+  }
+}
